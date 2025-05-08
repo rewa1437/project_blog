@@ -2,7 +2,8 @@
 import Navbar from "./components/Navbar";
 import Image from "next/image";
 import cover from './image/screen.png';
-
+import invest from './image/blog/Invest.jpg';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           className="object-cover w-full max-w-full h-auto"
         />
       </div>
-      <div className="flex items-center space-x-8 my-10 p-5 rounded-lg ">
+      <div className="flex items-center space-x-8 my-10 p-5 rounded-lg mb-30 ">
         <div className="w-2/7">
           
         </div>
@@ -44,43 +45,71 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="p-8">
-        {/* หัวข้อ Blog */}
+      <div className="p-8 h-150">
         <div>
           <h1 className="text-4xl font-bold">Blog</h1>
         </div>
-        {/* หัวข้อ Recommend for You */}
         <div className="mt-8">
           <h2 className="text-3xl font-semibold">Recommend for You</h2>
         </div>
 
-        {/* คอนเทนต์ที่แสดงรูปภาพและข้อความในกริด */}
         <div className="grid grid-cols-3 gap-8 mt-8">
-          <div className="h-60">
-            <div className="bg-gray-300 h-60">
-              รูปจ้าาา
-            </div>
-            <div className="text-center mt-4">
-              <h3 className="font-bold">How to Be A Millionaire in a Year</h3>
-              <p className="text-sm">Adam Driver</p>
-            </div>
-          </div>
 
-          <div className="bg-gray-300 h-60">
-            รูปจ้าาา
-            <div className="text-center mt-4">
-              <h3 className="font-bold">How to Be A Millionaire in a Year</h3>
-              <p className="text-sm">Mona Lisa</p>
-            </div>
-          </div>
+          <Link href="/">
+            <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#6DBE45] transition-all duration-300">
+              <div className="bg-gray-300 h-60 flex items-center justify-center text-center">
+                <Image 
+                  src={invest} 
+                  alt="Random Image"
+                  width={400} 
+                  height={400} 
+                  className="object-cover w-full h-full rounded-md" 
+                />
+              </div>
+              <div className="text-center mt-4 ">
+                <h3 className="font-bold">อยู่รอดได้ถึงสิ้นเดือน แค่จัดการเงินเดือนให้ดี</h3>
+                <p className="text-sm">BIG ANP</p>
+              </div>
 
-          <div className="bg-gray-300 h-60">
-            รูปจ้าาา
-            <div className="text-center mt-4">
-              <h3 className="font-bold">How to Be A Millionaire in a Year</h3>
-              <p className="text-sm">Pedro Pascal</p>
             </div>
-          </div>
+          </Link>
+
+          <Link href="/">
+            <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FF9F00] transition-all duration-300">  
+              <div className="bg-gray-300 h-60 flex items-center justify-center text-center">
+                <Image 
+                  src={invest} 
+                  alt="Random Image"
+                  width={400} 
+                  height={400} 
+                  className="object-cover w-full h-full rounded-md" 
+                />
+              </div>
+              <div className="text-center mt-4">
+                <h3 className="font-bold">ออมเงินไม่เครียด ใช้ชีวิตได้สบาย</h3>
+                <p className="text-sm">NAM WTN</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/">
+            <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FFB800] transition-all duration-300">  
+              <div className=" h-60 flex items-center justify-center text-center">
+              <Image 
+                src={invest} 
+                alt="Random Image"
+                width={400} 
+                height={400} 
+                className="object-cover w-full h-full rounded-md" 
+              />
+              </div>
+              <div className="text-center mt-4">
+                <h3 className="font-bold">ลงทุนให้คุ้มค่า ใช้เงินทำงานให้เรา</h3>
+                <p className="text-sm">PAT NNP</p>
+              </div>
+            </div>
+          </Link>
+
         </div>
       </div>
     </div>

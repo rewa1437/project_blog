@@ -1,9 +1,10 @@
 import Navbar from "../components/Navbar";
 export default function Blog() {
   return (
-    <div>
+    <div className="h-1000">
       <Navbar/>
-      <h1>Blog Page</h1>
+      <div className="width-auto h-[90px] bg-black sticky sticky top-18 z-50">
+      </div>
     </div>
   );
 }

@@ -33,10 +33,12 @@ export default function Navbar() {
           <Link href="/about">
             <span className={`${isActiveLink('/about')} cursor-pointer`}>About</span>
           </Link>
-
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500">
-            Login
-          </button>
+          <Link href="/logins">
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500">
+              Login
+            </button>
+          </Link>
+          
         </div>
       </div>
     </nav>
