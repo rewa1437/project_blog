@@ -22,12 +22,12 @@ export default function Navbar() {
             <span className={`${isActiveLink('/')} cursor-pointer`}>Home</span>
           </Link>
 
-          <Link href="./blog">
+          <Link href="/blog">
             <span className={`${isActiveLink('/blog')} cursor-pointer`}>Blog</span>
           </Link>
 
-          <Link href="/courses">
-            <span className={`${isActiveLink('/courses')} cursor-pointer`}>Donate us</span>
+          <Link href="/donate_us">
+            <span className={`${isActiveLink('/donate_us')} cursor-pointer`}>Donate us</span>
           </Link>
 
           <Link href="/about">

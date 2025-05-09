@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Image from "next/image";
 import cover from './image/screen.png';
 import invest from './image/blog/Invest.jpg';
+import manage from './image/blog/manage.jpg';
+import saving from './image/blog/saving.jpg';
+import logo from './image/logo/logo.png';
 import Link from 'next/link';
 
 export default function Home() {
@@ -19,13 +22,19 @@ export default function Home() {
         />
       </div>
       <div className="flex items-center space-x-8 my-10 p-5 rounded-lg mb-30 ">
-        <div className="w-2/7">
-          
+        <div className="w-1/10 ">
+
         </div>
-        <div className="w-1/7">
-          
+        <div className="w-4/10 item-center ">
+            <Image 
+                  src={logo} 
+                  alt="Random Image"
+                  width={400} 
+                  height={400} 
+                  className="object-cover w-full h-full rounded-md hover:scale-105 transition-all duration-300" 
+              />
         </div>
-        <div className="w-3/7 flex-space">
+        <div className="w-4/10 flex-space ">
           <h1 className="text-3xl font-bold mb-4">No Money No Honey</h1>
           <p className="text-sm mb-6">
           &emsp;&emsp;&emsp;&emsp;ทีม "No Money No Honey" มีเป้าหมายในการสร้างสื่อการเงินเบื้องต้นที่มีเนื้อหาชัดเจนและเข้าใจง่าย 
@@ -40,9 +49,14 @@ export default function Home() {
           ทีมงานมุ่งหวังที่จะสร้างสื่อที่ไม่เพียงแค่ให้ความรู้ แต่ยังช่วยเสริมสร้างทักษะในการวางแผนการเงินที่ดี 
           เพื่อให้ผู้คนมีความมั่นคงทางการเงินและสามารถบรรลุเป้าหมายทางการเงินในชีวิตได้อย่างยั่งยืน.
           </p>
-          <button className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-400">
-            Learn More
-          </button>
+          <Link href='/about'>
+            <button className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-400">
+              Learn More
+            </button>
+          </Link>
+        </div>
+        <div className="w-1/10 ">
+
         </div>
       </div>
       <div className="p-8 h-150">
@@ -55,11 +69,11 @@ export default function Home() {
 
         <div className="grid grid-cols-3 gap-8 mt-8">
 
-          <Link href="/">
+          <Link href="/blog/learning/manage">
             <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#6DBE45] transition-all duration-300">
-              <div className="bg-gray-300 h-60 flex items-center justify-center text-center">
+              <div className=" h-60 flex items-center justify-center text-center">
                 <Image 
-                  src={invest} 
+                  src={manage} 
                   alt="Random Image"
                   width={400} 
                   height={400} 
@@ -74,11 +88,11 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/">
+          <Link href="/blog/learning/saving">
             <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FF9F00] transition-all duration-300">  
-              <div className="bg-gray-300 h-60 flex items-center justify-center text-center">
+              <div className=" h-60 flex items-center justify-center text-center">
                 <Image 
-                  src={invest} 
+                  src={saving} 
                   alt="Random Image"
                   width={400} 
                   height={400} 
@@ -92,7 +106,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/">
+          <Link href="/blog/learning/invest">
             <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FFB800] transition-all duration-300">  
               <div className=" h-60 flex items-center justify-center text-center">
               <Image 
