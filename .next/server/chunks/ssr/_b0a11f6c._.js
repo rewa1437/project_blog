@@ -260,7 +260,7 @@ function About() {
                                         className: "rounded-full mx-auto mb-4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 35,
+                                        lineNumber: 34,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -268,7 +268,7 @@ function About() {
                                         children: "WANTANA RU_ARN"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 42,
+                                        lineNumber: 41,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -276,13 +276,13 @@ function About() {
                                         children: "Back-end Developer"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 43,
+                                        lineNumber: 42,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/about/page.js",
-                                lineNumber: 34,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,7 +296,7 @@ function About() {
                                         className: "rounded-full mx-auto mb-4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 48,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -304,7 +304,7 @@ function About() {
                                         children: "NONGNAPAS PANKLAI"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 55,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -312,13 +312,13 @@ function About() {
                                         children: "UI/UX Designer"
                                     }, void 0, false, {
                                         fileName: "[project]/app/about/page.js",
-                                        lineNumber: 56,
+                                        lineNumber: 54,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/about/page.js",
-                                lineNumber: 47,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, this)
                         ]

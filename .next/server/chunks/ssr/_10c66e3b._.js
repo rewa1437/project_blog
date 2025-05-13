@@ -89,8 +89,8 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Navbar.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)"); // สำหรับแสดงรูปภาพ
-var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$image$2f$blog$2f$Invest$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$app$2f$image$2f$blog$2f$Invest$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/app/image/blog/Invest.jpg.mjs { IMAGE => "[project]/app/image/blog/Invest.jpg (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)'); // ใส่ภาพที่ต้องการ
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$image$2f$blog$2f$Invest$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$app$2f$image$2f$blog$2f$Invest$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/app/image/blog/Invest.jpg.mjs { IMAGE => "[project]/app/image/blog/Invest.jpg (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 ;
 ;
@@ -114,7 +114,7 @@ function DonateUs() {
                         children: "Donate Us"
                     }, void 0, false, {
                         fileName: "[project]/app/donate_us/page.js",
-                        lineNumber: 13,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -123,14 +123,14 @@ function DonateUs() {
                             "เพื่อเป็นการสนับสนุนเราและร่วมพัฒนาเนื้อหาที่มีคุณค่า เรามีหลายระดับการสนับสนุนที่คุณสามารถเลือกได้ตามความสะดวก ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/app/donate_us/page.js",
-                                lineNumber: 15,
+                                lineNumber: 14,
                                 columnNumber: 121
                             }, this),
                             "ท่านสามารถเลือกช่องทางการสนับสนุนที่ต้องการได้ที่นี่ เพื่อช่วยให้เราสามารถสร้างสรรค์และพัฒนาสื่อการเรียนรู้ให้ดียิ่งขึ้น!"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/donate_us/page.js",
-                        lineNumber: 14,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -149,12 +149,12 @@ function DonateUs() {
                                             className: "object-cover w-full h-full rounded-md"
                                         }, void 0, false, {
                                             fileName: "[project]/app/donate_us/page.js",
-                                            lineNumber: 24,
+                                            lineNumber: 21,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 23,
+                                        lineNumber: 20,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -165,7 +165,7 @@ function DonateUs() {
                                                 children: "ผู้สนับสนุนระดับจอมยุทธ"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 35,
+                                                lineNumber: 31,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -175,24 +175,24 @@ function DonateUs() {
                                                     children: "Donate Now"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/donate_us/page.js",
-                                                    lineNumber: 37,
+                                                    lineNumber: 33,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 36,
+                                                lineNumber: 32,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 34,
+                                        lineNumber: 30,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/page.js",
-                                lineNumber: 22,
+                                lineNumber: 19,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -208,12 +208,12 @@ function DonateUs() {
                                             className: "object-cover w-full h-full rounded-md"
                                         }, void 0, false, {
                                             fileName: "[project]/app/donate_us/page.js",
-                                            lineNumber: 47,
+                                            lineNumber: 42,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 46,
+                                        lineNumber: 41,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -224,7 +224,7 @@ function DonateUs() {
                                                 children: "ผู้สนับสนุนระดับวีรบุรุษ"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 58,
+                                                lineNumber: 52,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -232,19 +232,19 @@ function DonateUs() {
                                                 children: "Donate Now"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 59,
+                                                lineNumber: 53,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 57,
+                                        lineNumber: 51,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/page.js",
-                                lineNumber: 45,
+                                lineNumber: 40,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -260,12 +260,12 @@ function DonateUs() {
                                             className: "object-cover w-full h-full rounded-md"
                                         }, void 0, false, {
                                             fileName: "[project]/app/donate_us/page.js",
-                                            lineNumber: 68,
+                                            lineNumber: 61,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 67,
+                                        lineNumber: 60,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -276,7 +276,7 @@ function DonateUs() {
                                                 children: "ผู้สนับสนุนระดับตำนาน"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 79,
+                                                lineNumber: 71,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -284,31 +284,31 @@ function DonateUs() {
                                                 children: "Donate Now"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/page.js",
-                                                lineNumber: 80,
+                                                lineNumber: 72,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/page.js",
-                                        lineNumber: 78,
+                                        lineNumber: 70,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/page.js",
-                                lineNumber: 66,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/donate_us/page.js",
-                        lineNumber: 19,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/donate_us/page.js",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, this)
         ]

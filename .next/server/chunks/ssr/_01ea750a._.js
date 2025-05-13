@@ -90,7 +90,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Navbar.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$image$2f$blog$2f$manage$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$app$2f$image$2f$blog$2f$manage$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/app/image/blog/manage.jpg.mjs { IMAGE => "[project]/app/image/blog/manage.jpg (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)'); // Image path
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$image$2f$blog$2f$manage$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$app$2f$image$2f$blog$2f$manage$2e$jpg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/app/image/blog/manage.jpg.mjs { IMAGE => "[project]/app/image/blog/manage.jpg (static in ecmascript)" } [app-rsc] (structured image object, ecmascript)');
 ;
 ;
 ;
@@ -114,25 +114,25 @@ function BlogPost() {
                             children: "อยู่รอดได้ถึงสิ้นเดือน แค่จัดการเงินเดือนให้ดี"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/learning/manage/page.js",
-                            lineNumber: 12,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             children: "Author: ANUPAP PASAKORNHIRAN"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/learning/manage/page.js",
-                            lineNumber: 13,
+                            lineNumber: 12,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/learning/manage/page.js",
-                    lineNumber: 11,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/learning/manage/page.js",
-                lineNumber: 10,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -146,7 +146,7 @@ function BlogPost() {
                                 children: "อยู่รอดได้ถึงสิ้นเดือน แค่จัดการเงินเดือนให้ดี"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 21,
+                                lineNumber: 19,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -154,7 +154,7 @@ function BlogPost() {
                                 children: "การตั้งงบประมาณการใช้จ่าย"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 22,
+                                lineNumber: 20,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -162,7 +162,7 @@ function BlogPost() {
                                 children: "การใช้สูตร 50/30/20 เป็นวิธีที่แนะนำในการจัดสรรเงินเดือน เพื่อให้สามารถใช้จ่ายได้อย่างมีประสิทธิภาพและยังคงสามารถออมเงินได้ในระยะยาว โดยการแบ่งเงินออกเป็น 3 ส่วนหลัก:"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 25,
+                                lineNumber: 23,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -172,27 +172,27 @@ function BlogPost() {
                                         children: "50% สำหรับค่าใช้จ่ายจำเป็น: เช่น ค่าครองชีพพื้นฐานที่ขาดไม่ได้ เช่น ค่าอาหาร, ค่าที่อยู่อาศัย, ค่าน้ำ-ไฟ, ค่าเดินทาง ฯลฯ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 31,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "30% สำหรับความต้องการ: ค่าใช้จ่ายที่ไม่จำเป็น เช่น การท่องเที่ยว, ช้อปปิ้ง, ความบันเทิงต่าง ๆ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 32,
+                                        lineNumber: 29,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "20% สำหรับการออมและการลงทุน: การออมเพื่อเป้าหมายในอนาคต เช่น การเกษียณ หรือการสร้างเงินสำรองฉุกเฉิน"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 33,
+                                        lineNumber: 30,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 30,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -200,7 +200,7 @@ function BlogPost() {
                                 children: "การใช้สูตรนี้ช่วยให้คุณสามารถจัดสรรเงินที่ได้รับจากเงินเดือนให้มีระเบียบและลดการใช้จ่ายที่เกินความจำเป็น"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 36,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -208,7 +208,7 @@ function BlogPost() {
                                 children: "การทำบัญชีรายรับรายจ่าย"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 40,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -216,7 +216,7 @@ function BlogPost() {
                                 children: "การทำบัญชีรายรับ-รายจ่ายเป็นเครื่องมือที่สำคัญในการติดตามการเงินส่วนบุคคล:"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 43,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -226,34 +226,34 @@ function BlogPost() {
                                         children: "บันทึกรายรับ: บันทึกทุกๆ รายได้ที่เข้ามา เช่น เงินเดือน, รายได้จากการลงทุน, หรือรายได้เสริม"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 49,
+                                        lineNumber: 45,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "บันทึกรายจ่าย: บันทึกค่าใช้จ่ายทั้งหมดที่เกิดขึ้นในแต่ละเดือน เช่น ค่าอาหาร, ค่าบ้าน, ค่าประกัน, ค่าเดินทาง ฯลฯ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 50,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "จำแนกหมวดหมู่: แบ่งค่าใช้จ่ายออกเป็นหมวดหมู่เพื่อให้เห็นภาพการใช้จ่ายที่ชัดเจน และทำให้สามารถปรับปรุงการใช้จ่ายที่ไม่จำเป็น"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 51,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "ใช้แอปพลิเคชัน: ใช้แอปพลิเคชันหรือเครื่องมือออนไลน์ในการบันทึกและติดตามการใช้จ่าย เช่น K-My Money หรือ SCB Easy App"
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/learning/manage/page.js",
-                                        lineNumber: 52,
+                                        lineNumber: 48,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 48,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -261,13 +261,13 @@ function BlogPost() {
                                 children: "การทำบัญชีรายรับรายจ่ายจะช่วยให้คุณสามารถจัดการกับการใช้เงินได้ดีขึ้นและรู้ว่าคุณใช้จ่ายไปกับอะไรบ้างในแต่ละเดือน"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/learning/manage/page.js",
-                                lineNumber: 55,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/blog/learning/manage/page.js",
-                        lineNumber: 20,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -280,18 +280,18 @@ function BlogPost() {
                             className: "object-cover w-full h-auto rounded-md"
                         }, void 0, false, {
                             fileName: "[project]/app/blog/learning/manage/page.js",
-                            lineNumber: 62,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/blog/learning/manage/page.js",
-                        lineNumber: 61,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/blog/learning/manage/page.js",
-                lineNumber: 18,
+                lineNumber: 16,
                 columnNumber: 7
             }, this)
         ]
