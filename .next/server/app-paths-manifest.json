@@ -1,6 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/about/page": "app/about/page.js",
   "/blog/learning/invest/page": "app/blog/learning/invest/page.js",
   "/blog/learning/manage/page": "app/blog/learning/manage/page.js",
   "/blog/learning/saving/page": "app/blog/learning/saving/page.js",
