@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Image from "next/image";
-import invest from '../image/blog/Invest.jpg';
 import dev1 from '../image/dev/anp.jpg';
 import dev2 from '../image/dev/wtn.jpg';
 import dev3 from '../image/dev/nnp.jpg';

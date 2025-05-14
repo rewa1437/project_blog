@@ -79,12 +79,14 @@ export default function Navbar() {
                   {user.username}
                 </div>
               </Link>
-              <button
-                className="ml-4 bg-red-600 text-white px-4 py-2 rounded-md hover:scale-101"
-                onClick={handleLogout}
-              >
-                Logout
-              </button>
+              <Link href="/">
+                <button
+                  className="ml-4 bg-red-600 text-white px-4 py-2 rounded-md hover:scale-101"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </button>
+              </Link>
             </div>
           ) : (
             <Link href="/logins">

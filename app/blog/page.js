@@ -17,7 +17,7 @@ export default function Blog() {
         <div className="mt-8">
           <h3 className="text-2xl font-semibold mb-6">ประเภทการบริหารเงิน</h3>
           <div className="grid grid-cols-3 gap-8 mt-4">
-            <Link href="/">
+            <Link href="/blog/learning/manage">
               <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#6DBE45] transition-all duration-300">
                 <div className="h-60 flex items-center justify-center text-center">
                   <Image 
@@ -42,7 +42,7 @@ export default function Blog() {
           <h3 className="text-2xl font-semibold mb-6">ประเภทการออมเงิน</h3>
           <div className="grid grid-cols-3 gap-8 mt-4">
 
-            <Link href="/">
+            <Link href="/blog/learning/saving">
               <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FF9F00] transition-all duration-300">  
                 <div className="h-60 flex items-center justify-center text-center">
                   <Image 
@@ -67,7 +67,7 @@ export default function Blog() {
           <h3 className="text-2xl font-semibold mb-6">ประเภทการลงทุน</h3>
           <div className="grid grid-cols-3 gap-8 mt-4">
 
-            <Link href="/">
+            <Link href="/blog/learning/invest">
               <div className="h-60 hover:shadow-2xl hover:scale-105 hover:text-[#FFB800] transition-all duration-300">  
                 <div className="h-60 flex items-center justify-center text-center">
                   <Image 
