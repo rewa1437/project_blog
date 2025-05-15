@@ -50,6 +50,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function Navbar() {
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [isLogin, setlogin] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
@@ -63,8 +64,8 @@ function Navbar() {
                         ...parsedUser,
                         ...userInfo
                     };
-                    console.log(completeUserData);
                     setUser(completeUserData);
+                    setlogin(true);
                     setLoading(false);
                 } catch (error) {
                     console.error('Error fetching user info:', error);
@@ -81,6 +82,9 @@ function Navbar() {
         setUser(null);
         window.location.reload();
     };
+    const handleLoginfirst = ()=>{
+        alert("กรุณาล็อคอินก่อนเข้าสู่หน้าสนับสนุน");
+    };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center justify-center h-screen bg-gray-100",
@@ -88,12 +92,12 @@ function Navbar() {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/app/components/Navbar.js",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/Navbar.js",
-            lineNumber: 45,
+            lineNumber: 50,
             columnNumber: 7
         }, this);
     }
@@ -108,7 +112,7 @@ function Navbar() {
                     children: "MicroFinance"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Navbar.js",
-                    lineNumber: 60,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -121,12 +125,12 @@ function Navbar() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 64,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 63,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -136,28 +140,43 @@ function Navbar() {
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 68,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        isLogin ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "/donate_us",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "cursor-pointer",
                                 children: "Donate"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 72,
-                                columnNumber: 13
+                                lineNumber: 77,
+                                columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 71,
-                            columnNumber: 11
+                            lineNumber: 76,
+                            columnNumber: 15
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "cursor-pointer",
+                                onClick: handleLoginfirst,
+                                children: "Donate"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.js",
+                                lineNumber: 81,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar.js",
+                            lineNumber: 80,
+                            columnNumber: 15
                         }, this),
                         user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center",
@@ -169,12 +188,12 @@ function Navbar() {
                                         children: user.username
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Navbar.js",
-                                        lineNumber: 78,
+                                        lineNumber: 88,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Navbar.js",
-                                    lineNumber: 77,
+                                    lineNumber: 87,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -185,18 +204,18 @@ function Navbar() {
                                         children: "Logout"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Navbar.js",
-                                        lineNumber: 83,
+                                        lineNumber: 93,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Navbar.js",
-                                    lineNumber: 82,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 76,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "/logins",
@@ -205,29 +224,29 @@ function Navbar() {
                                 children: "Login"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 93,
+                                lineNumber: 103,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 92,
+                            lineNumber: 102,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Navbar.js",
-                    lineNumber: 62,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Navbar.js",
-            lineNumber: 59,
+            lineNumber: 64,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Navbar.js",
-        lineNumber: 58,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
@@ -329,7 +348,7 @@ function Profile() {
                 if (data.success) {
                     alert("User deleted successfully!");
                     localStorage.removeItem('user');
-                    window.location.href = "/";
+                    window.location.href = "/"; // Redirect ไปที่หน้า login
                 } else {
                     alert("Failed to delete user.");
                 }

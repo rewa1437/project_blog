@@ -20,6 +20,7 @@ function Navbar() {
     _s();
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [isLogin, setlogin] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navbar.useEffect": ()=>{
             const storedUser = localStorage.getItem('user');
@@ -35,8 +36,8 @@ function Navbar() {
                                 ...parsedUser,
                                 ...userInfo
                             };
-                            console.log(completeUserData);
                             setUser(completeUserData);
+                            setlogin(true);
                             setLoading(false);
                         } catch (error) {
                             console.error('Error fetching user info:', error);
@@ -55,6 +56,9 @@ function Navbar() {
         setUser(null);
         window.location.reload();
     };
+    const handleLoginfirst = ()=>{
+        alert("กรุณาล็อคอินก่อนเข้าสู่หน้าสนับสนุน");
+    };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center justify-center h-screen bg-gray-100",
@@ -62,12 +66,12 @@ function Navbar() {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/app/components/Navbar.js",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/Navbar.js",
-            lineNumber: 45,
+            lineNumber: 50,
             columnNumber: 7
         }, this);
     }
@@ -82,7 +86,7 @@ function Navbar() {
                     children: "MicroFinance"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Navbar.js",
-                    lineNumber: 60,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -95,12 +99,12 @@ function Navbar() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 64,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 63,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -110,28 +114,43 @@ function Navbar() {
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 68,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 67,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isLogin ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/donate_us",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "cursor-pointer",
                                 children: "Donate"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 72,
-                                columnNumber: 13
+                                lineNumber: 77,
+                                columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 71,
-                            columnNumber: 11
+                            lineNumber: 76,
+                            columnNumber: 15
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "cursor-pointer",
+                                onClick: handleLoginfirst,
+                                children: "Donate"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.js",
+                                lineNumber: 81,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar.js",
+                            lineNumber: 80,
+                            columnNumber: 15
                         }, this),
                         user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center",
@@ -143,12 +162,12 @@ function Navbar() {
                                         children: user.username
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Navbar.js",
-                                        lineNumber: 78,
+                                        lineNumber: 88,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Navbar.js",
-                                    lineNumber: 77,
+                                    lineNumber: 87,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -159,18 +178,18 @@ function Navbar() {
                                         children: "Logout"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Navbar.js",
-                                        lineNumber: 83,
+                                        lineNumber: 93,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Navbar.js",
-                                    lineNumber: 82,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 76,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/logins",
@@ -179,33 +198,33 @@ function Navbar() {
                                 children: "Login"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.js",
-                                lineNumber: 93,
+                                lineNumber: 103,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar.js",
-                            lineNumber: 92,
+                            lineNumber: 102,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Navbar.js",
-                    lineNumber: 62,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Navbar.js",
-            lineNumber: 59,
+            lineNumber: 64,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Navbar.js",
-        lineNumber: 58,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
-_s(Navbar, "NiO5z6JIqzX62LS5UWDgIqbZYyY=");
+_s(Navbar, "tiFtubqTWjvjJDvA7BLpzV3jr2o=");
 _c = Navbar;
 var _c;
 __turbopack_context__.k.register(_c, "Navbar");
@@ -232,28 +251,21 @@ var _s = __turbopack_context__.k.signature();
 function Checkout() {
     _s();
     const [product, setProduct] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Checkout.useEffect": ()=>{
             const productId = localStorage.getItem("selectedProductId");
-            console.log(productId);
             if (productId) {
                 const fetchProductData = {
                     "Checkout.useEffect.fetchProductData": async ()=>{
                         try {
                             const response = await fetch(`http://127.0.0.1:8000/get_product_details/${productId}/`);
-                            if (!response.ok) {
-                                throw new Error('Failed to fetch product details');
-                            }
                             const data = await response.json();
-                            if (data.id) {
-                                setProduct(data);
-                            } else {
-                                throw new Error('Product not found');
-                            }
+                            if (data.id) setProduct(data);
+                            else throw new Error('Product not found');
                         } catch (error) {
                             setError(error.message);
-                            console.error('Error fetching product details:', error);
                         }
                     }
                 }["Checkout.useEffect.fetchProductData"];
@@ -261,6 +273,77 @@ function Checkout() {
             }
         }
     }["Checkout.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Checkout.useEffect": ()=>{
+            const storedUser = JSON.parse(localStorage.getItem("user"));
+            const userId = storedUser?.user_id;
+            if (userId) {
+                const fetchUserInfo = {
+                    "Checkout.useEffect.fetchUserInfo": async ()=>{
+                        try {
+                            const response = await fetch(`http://127.0.0.1:8000/get_user/?user_id=${userId}`);
+                            const userInfo = await response.json();
+                            setUser({
+                                user_id: userId,
+                                ...userInfo
+                            });
+                        } catch (error) {
+                            console.error("Error fetching user info:", error);
+                        }
+                    }
+                }["Checkout.useEffect.fetchUserInfo"];
+                fetchUserInfo();
+            }
+        }
+    }["Checkout.useEffect"], []);
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        if (!user?.user_id) {
+            alert("กรุณาเข้าสู่ระบบก่อนทำการบริจาค");
+            return;
+        }
+        const formData = new FormData(e.target);
+        const fullName = formData.get("fullname");
+        const email = formData.get("email");
+        const phone = formData.get("phone");
+        try {
+            const donateRes = await fetch("http://127.0.0.1:8000/add_donation/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    user_id: user.user_id,
+                    product_id: product.id,
+                    amount: product.product_price,
+                    note: `ชื่อ: ${fullName}, อีเมล: ${email}, เบอร์: ${phone}`
+                })
+            });
+            const donateData = await donateRes.json();
+            if (donateData.success) {
+                const newRank = product.product_rank;
+                if (newRank > user.rank) {
+                    await fetch("http://127.0.0.1:8000/update_rank/", {
+                        method: "PUT",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            user_id: user.user_id,
+                            rank: newRank
+                        })
+                    });
+                }
+                alert("ขอบคุณสำหรับการบริจาค!");
+                window.location.href = "/";
+            } else {
+                alert("เกิดข้อผิดพลาด: " + donateData.message);
+            }
+        } catch (error) {
+            console.error("Error submitting donation:", error);
+            alert("ไม่สามารถทำรายการได้");
+        }
+    };
     if (error) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center justify-center h-screen bg-gray-100",
@@ -268,38 +351,38 @@ function Checkout() {
                 children: error
             }, void 0, false, {
                 fileName: "[project]/app/donate_us/checkout/page.js",
-                lineNumber: 43,
+                lineNumber: 106,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/donate_us/checkout/page.js",
-            lineNumber: 42,
+            lineNumber: 105,
             columnNumber: 7
         }, this);
     }
-    if (!product) {
+    if (!product || !user) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center justify-center h-screen bg-gray-100",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Loading product details..."
+                children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/app/donate_us/checkout/page.js",
-                lineNumber: 51,
+                lineNumber: 114,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/donate_us/checkout/page.js",
-            lineNumber: 50,
+            lineNumber: 113,
             columnNumber: 7
         }, this);
     }
-    const rankClass = product?.product_rank === 1 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา' : product?.product_rank === 2 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีฟ้า' : product?.product_rank === 3 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเขียว' : product?.product_rank === 4 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเหลือง' : 'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา';
+    const rankClass = product.product_rank === 1 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา' : product.product_rank === 2 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีฟ้า' : product.product_rank === 3 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเขียว' : product.product_rank === 4 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเหลือง' : 'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "h-auto",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/donate_us/checkout/page.js",
-                lineNumber: 63,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -310,14 +393,14 @@ function Checkout() {
                         children: "Checkout"
                     }, void 0, false, {
                         fileName: "[project]/app/donate_us/checkout/page.js",
-                        lineNumber: 65,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-8 flex gap-x-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-10/10 p-6 ",
+                                className: "w-10/10 p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-2xl font-semibold",
@@ -327,12 +410,12 @@ function Checkout() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 69,
+                                        lineNumber: 133,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 70,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -341,7 +424,7 @@ function Checkout() {
                                                 children: "Price:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 71,
+                                                lineNumber: 135,
                                                 columnNumber: 16
                                             }, this),
                                             " ",
@@ -350,12 +433,12 @@ function Checkout() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 71,
+                                        lineNumber: 135,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 72,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -364,7 +447,7 @@ function Checkout() {
                                                 children: "Description:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 73,
+                                                lineNumber: 137,
                                                 columnNumber: 16
                                             }, this),
                                             " ",
@@ -372,12 +455,12 @@ function Checkout() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 73,
+                                        lineNumber: 137,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 74,
+                                        lineNumber: 138,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -386,7 +469,7 @@ function Checkout() {
                                                 children: "Rank:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 75,
+                                                lineNumber: 139,
                                                 columnNumber: 16
                                             }, this),
                                             " ",
@@ -394,35 +477,36 @@ function Checkout() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 75,
+                                        lineNumber: 139,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                lineNumber: 68,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-1/10"
                             }, void 0, false, {
                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                lineNumber: 78,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-3/4 p-6 ",
+                                className: "w-3/4 p-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "text-2xl font-semibold",
                                         children: "Order Form"
                                     }, void 0, false, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 81,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                         className: "mt-4",
+                                        onSubmit: handleSubmit,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "mb-4",
@@ -432,23 +516,24 @@ function Checkout() {
                                                         children: "Full Name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 84,
+                                                        lineNumber: 148,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        name: "fullname",
                                                         type: "text",
                                                         className: "w-full p-2 mt-1 border rounded-md",
-                                                        placeholder: "Enter your full name",
+                                                        placeholder: "Enter your name",
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 85,
+                                                        lineNumber: 149,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 83,
+                                                lineNumber: 147,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -459,23 +544,24 @@ function Checkout() {
                                                         children: "Email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 88,
+                                                        lineNumber: 152,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        name: "email",
                                                         type: "email",
                                                         className: "w-full p-2 mt-1 border rounded-md",
                                                         placeholder: "Enter your email",
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 89,
+                                                        lineNumber: 153,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 87,
+                                                lineNumber: 151,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -486,23 +572,24 @@ function Checkout() {
                                                         children: "Phone Number"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 92,
+                                                        lineNumber: 156,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        name: "phone",
                                                         type: "tel",
                                                         className: "w-full p-2 mt-1 border rounded-md",
                                                         placeholder: "Enter your phone number",
                                                         required: true
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                                        lineNumber: 93,
+                                                        lineNumber: 157,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 91,
+                                                lineNumber: 155,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -519,7 +606,7 @@ function Checkout() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/donate_us/checkout/page.js",
-                                                            lineNumber: 97,
+                                                            lineNumber: 161,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -528,52 +615,52 @@ function Checkout() {
                                                             children: "Confirm Donation"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/donate_us/checkout/page.js",
-                                                            lineNumber: 98,
+                                                            lineNumber: 162,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/donate_us/checkout/page.js",
-                                                    lineNumber: 96,
+                                                    lineNumber: 160,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                                lineNumber: 95,
+                                                lineNumber: 159,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/checkout/page.js",
-                                        lineNumber: 82,
+                                        lineNumber: 146,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/checkout/page.js",
-                                lineNumber: 80,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/donate_us/checkout/page.js",
-                        lineNumber: 67,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/donate_us/checkout/page.js",
-                lineNumber: 64,
+                lineNumber: 128,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/donate_us/checkout/page.js",
-        lineNumber: 62,
+        lineNumber: 126,
         columnNumber: 5
     }, this);
 }
-_s(Checkout, "vaA9EJhf1ZFOlRFQSJiKFAVsxpk=");
+_s(Checkout, "v+F1kfaQ+hLw5wTVhFbmTqNzsIk=");
 _c = Checkout;
 var _c;
 __turbopack_context__.k.register(_c, "Checkout");

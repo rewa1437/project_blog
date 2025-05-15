@@ -1,12 +1,9 @@
 {
-  "/blog/learning/invest/page": "app/blog/learning/invest/page.js",
-  "/blog/learning/manage/page": "app/blog/learning/manage/page.js",
-  "/blog/learning/saving/page": "app/blog/learning/saving/page.js",
   "/blog/page": "app/blog/page.js",
   "/donate_us/checkout/page": "app/donate_us/checkout/page.js",
   "/donate_us/page": "app/donate_us/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/logins/page": "app/logins/page.js",
   "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/register/page": "app/register/page.js"
+  "/profile/page": "app/profile/page.js"
 }

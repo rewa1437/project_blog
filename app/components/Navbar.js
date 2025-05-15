@@ -6,6 +6,7 @@ import Link from 'next/link';
 export default function Navbar() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isLogin, setlogin] =  useState(false);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -19,8 +20,8 @@ export default function Navbar() {
           const userInfo = await userResponse.json();
 
           const completeUserData = { ...parsedUser, ...userInfo };
-          console.log(completeUserData);
           setUser(completeUserData);
+          setlogin(true);
           setLoading(false);
         } catch (error) {
           console.error('Error fetching user info:', error);
@@ -38,6 +39,10 @@ export default function Navbar() {
     localStorage.removeItem('user');
     setUser(null);
     window.location.reload();
+  };
+
+  const handleLoginfirst = () => {
+    alert("กรุณาล็อคอินก่อนเข้าสู่หน้าสนับสนุน")
   };
 
   if (loading) {
@@ -67,10 +72,15 @@ export default function Navbar() {
           <Link href="/blog">
             <span className="cursor-pointer">Blog</span>
           </Link>
-
-          <Link href="/donate_us">
-            <span className="cursor-pointer">Donate</span>
-          </Link>
+          {isLogin ?(
+              <Link href="/donate_us">
+                <span className="cursor-pointer">Donate</span>
+              </Link>
+            ):(
+              <Link href="#">
+                <span className="cursor-pointer" onClick={handleLoginfirst}>Donate</span>
+              </Link>
+            )}
 
           {user ? (
             <div className="flex items-center">
