@@ -126,6 +126,9 @@ export default function Home() {
 
         </div>
       </div>
+      <footer className="text-center p-4 mt-8 text-gray-500 text-sm">
+        © 2025, Microfinance
+      </footer>
     </div>
   );
 }

@@ -11,8 +11,8 @@ export default function About() {
       
       <div className="bg-gray-100 p-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold">Meet the Development Team</h1>
-          <p className="mt-4 text-lg">Our passionate team behind the project</p>
+          <h1 className="text-4xl font-bold">พบกับทีมพัฒนาของเรา</h1>
+          
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

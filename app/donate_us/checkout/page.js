@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Navbar from '@/app/components/Navbar';
 
+
 export default function Checkout() {
   const [product, setProduct] = useState(null);
   const [user, setUser] = useState(null);
@@ -116,11 +117,11 @@ export default function Checkout() {
     );
   }
 
-  const rankClass = product.product_rank === 1 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา' :
-                    product.product_rank === 2 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีฟ้า' :
-                    product.product_rank === 3 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเขียว' :
-                    product.product_rank === 4 ? 'ได้รับพื้นหลังโปรไฟล์เป็นสีเหลือง' :
-                    'ได้รับพื้นหลังโปรไฟล์เป็นสีเทา';
+  const rankClass = product.product_rank === 1 ? 'ผู้สนับสนุนระดับนักผจญภัย ได้รับพื้นหลังโปรไฟล์เป็นสีเทา' :
+                    product.product_rank === 2 ? 'ผู้สนับสนุนระดับจอมยุทธ ได้รับพื้นหลังโปรไฟล์เป็นสีฟ้า' :
+                    product.product_rank === 3 ? 'ผู้สนับสนุนระดับวีรบุรุษ ได้รับพื้นหลังโปรไฟล์เป็นสีเขียว' :
+                    product.product_rank === 4 ? 'ผู้สนับสนุนระดับตำนาน ได้รับพื้นหลังโปรไฟล์เป็นสีเหลือง' :
+                    'ผู้สนับสนุนระดับนักผจญภัย ได้รับพื้นหลังโปรไฟล์เป็นสีเทา';
 
   return (
     <div className="h-auto">
@@ -130,13 +131,13 @@ export default function Checkout() {
 
         <div className="mt-8 flex gap-x-8">
           <div className="w-10/10 p-6">
-            <h3 className="text-2xl font-semibold">Product: {product.product_name}</h3>
+            <h3 className="text-2xl font-semibold">ชื่อสินค้า: {product.product_name}</h3>
             <br />
-            <p><strong>Price:</strong> {product.product_price} ฿</p>
+            <p><strong>ราคา:</strong> {product.product_price} ฿</p>
             <br />
-            <p><strong>Description:</strong> {product.product_description}</p>
+            <p><strong>รายละเอียดสินค้า:</strong> {product.product_description}</p>
             <br />
-            <p><strong>Rank:</strong> {rankClass}</p>
+            <p><strong>ระดับผู้สนับสนุน:</strong> {rankClass}</p>
           </div>
 
           <div className="w-1/10"></div>
@@ -145,15 +146,15 @@ export default function Checkout() {
             <h3 className="text-2xl font-semibold">Order Form</h3>
             <form className="mt-4" onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label className="block text-sm font-medium">Full Name</label>
+                <label className="block text-sm font-medium">Full Name / กรอกชื่อ-นามสกุล</label>
                 <input name="fullname" type="text" className="w-full p-2 mt-1 border rounded-md" placeholder="Enter your name" required />
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium">Email</label>
+                <label className="block text-sm font-medium">Email / อีเมล</label>
                 <input name="email" type="email" className="w-full p-2 mt-1 border rounded-md" placeholder="Enter your email" required/>
               </div>
               <div className="mb-4">
-                <label className="block text-sm font-medium">Phone Number</label>
+                <label className="block text-sm font-medium">Phone Number / เบอร์โทรศัพท์</label>
                 <input name="phone" type="tel" className="w-full p-2 mt-1 border rounded-md" placeholder="Enter your phone number" required />
               </div>
               <div className="mt-8">
@@ -168,6 +169,9 @@ export default function Checkout() {
           </div>
         </div>
       </div>
+      <footer className="text-center p-4 mt-8 text-gray-500 text-sm">
+        © 2025, Microfinance
+      </footer>
     </div>
   );
 }
