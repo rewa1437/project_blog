@@ -11,9 +11,7 @@ export default function Profile() {
   const [donations, setDonations] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentDonations = donations.slice(indexOfFirstItem, indexOfLastItem);
+
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -114,22 +112,22 @@ export default function Profile() {
     }
   };  
 
+  const filteredDonations = donations.filter(d => d.user_id === userData?.user_id);
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentDonations = filteredDonations.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(filteredDonations.length / itemsPerPage);
+
   const nextPage = () => {
-    if (currentPage < Math.ceil(donations.length / itemsPerPage)) {
-      setCurrentPage(currentPage + 1);
-    }
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
   const prevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
 
   const filteredData = donations.filter((item) => item.user_id === userData.user_id);
-
-  if (!filteredData.length) {
-    return <div>No donation history found.</div>;
-  }
   
   const rankClass = data_profile?.rank === 1 ? 'ผู้สนับสนุนระดับนักผจญภัย' :
                     data_profile?.rank === 2 ? 'ผู้สนับสนุนระดับจอมยุทธ' :
@@ -178,47 +176,56 @@ export default function Profile() {
 
 
 
-        <div style={{ width: 600, marginTop: 20 }} className="text-center bg-white rounded-lg p-10 mb-10">
-        <h1 className="text-3xl font-bold text-center text-green-600 mb-4">Donate History</h1>
-        <table className="min-w-full border-collapse border border-gray-300">
-          <thead>
-            <tr>
-              <th className="border border-gray-300 px-4 py-2">Timestamp</th>
-              <th className="border border-gray-300 px-4 py-2">Product Name</th>
-              <th className="border border-gray-300 px-4 py-2">Amount</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentDonations.map((item, index) => (
-              <tr key={item.id ?? index} className="hover:bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">{item.timestamp}</td>
-                <td className="border border-gray-300 px-4 py-2">{item.product_name}</td>
-                <td className="border border-gray-300 px-4 py-2 text-right">{item.amount}</td>
+        <div style={{ width: 600, marginTop: 20 }} className="bg-white shadow-md rounded-lg p-10">
+          <h2 className="text-3xl font-bold text-center text-green-600 mb-4">Donate History</h2>
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th className="border border-gray-300 px-4 py-2">Timestamp</th>
+                <th className="border border-gray-300 px-4 py-2">Product Name</th>
+                <th className="border border-gray-300 px-4 py-2">Amount</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {currentDonations.map((item, index) => (
+                <tr key={item.id ?? index} className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2">{item.timestamp}</td>
+                  <td className="border border-gray-300 px-4 py-2">{item.product_name}</td>
+                  <td className="border border-gray-300 px-4 py-2 text-right">{item.amount}</td>
+                </tr>
+              ))}
+              {currentDonations.length === 0 && (
+                <tr>
+                  <td colSpan="3" className="text-center py-4">
+                    No donations found.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
 
-        <div className="flex justify-between mt-2">
-          <button
-            onClick={prevPage}
-            disabled={currentPage === 1}
-            className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
-          >
-            Prev
-          </button>
-          <span>
-            Page {currentPage} of {Math.ceil(donations.length / itemsPerPage)}
-          </span>
-          <button
-            onClick={nextPage}
-            disabled={currentPage === Math.ceil(donations.length / itemsPerPage)}
-            className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
-          >
-            Next
-          </button>
+          <div className="flex justify-between mt-3">
+            <button
+              onClick={prevPage}
+              disabled={currentPage === 1}
+              className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+            >
+              Prev
+            </button>
+
+            <span className="self-center">
+              Page {currentPage} of {totalPages}
+            </span>
+
+            <button
+              onClick={nextPage}
+              disabled={currentPage === totalPages || totalPages === 0}
+              className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
