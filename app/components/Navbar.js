@@ -7,6 +7,7 @@ export default function Navbar() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isLogin, setlogin] =  useState(false);
+  const API_URL = process.env.API_URL || "http://localhost:8000";
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -16,7 +17,7 @@ export default function Navbar() {
 
       const fetchUserInfo = async () => {
         try {
-          const userResponse = await fetch(`http://127.0.0.1:8000/get_user/?user_id=${parsedUser.user_id}`);
+          const userResponse = await fetch(`${API_URL}/get_user/?user_id=${parsedUser.user_id}`);
           const userInfo = await userResponse.json();
 
           const completeUserData = { ...parsedUser, ...userInfo };
@@ -38,7 +39,6 @@ export default function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem('user');
     setUser(null);
-    window.location.reload();
   };
 
   const handleLoginfirst = () => {

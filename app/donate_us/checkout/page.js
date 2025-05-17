@@ -8,6 +8,7 @@ export default function Checkout() {
   const [product, setProduct] = useState(null);
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
+  const API_URL = process.env.API_URL || "http://localhost:8000";
 
   useEffect(() => {
     const productId = localStorage.getItem("selectedProductId"); 
@@ -15,7 +16,7 @@ export default function Checkout() {
     if (productId) {
       const fetchProductData = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:8000/get_product_details/${productId}/`);
+          const response = await fetch(`${API_URL}/get_product_details/${productId}/`);
           const data = await response.json();
           if (data.id) setProduct(data);
           else throw new Error('Product not found');
@@ -34,7 +35,7 @@ export default function Checkout() {
     if (userId) {
       const fetchUserInfo = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:8000/get_user/?user_id=${userId}`);
+          const response = await fetch(`${API_URL}/get_user/?user_id=${userId}`);
           const userInfo = await response.json();
           setUser({ user_id: userId, ...userInfo });
         } catch (error) {
@@ -59,7 +60,7 @@ export default function Checkout() {
     const phone = formData.get("phone");
 
     try {
-      const donateRes = await fetch("http://127.0.0.1:8000/add_donation/", {
+      const donateRes = await fetch(`${API_URL}/add_donation/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +79,7 @@ export default function Checkout() {
         const newRank = product.product_rank;
 
         if (newRank > user.rank) {
-          await fetch("http://127.0.0.1:8000/update_rank/", {
+          await fetch(`${API_URL}/update_rank/`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -130,19 +131,10 @@ export default function Checkout() {
         <h1 className="text-4xl font-bold text-center">Checkout</h1>
 
         <div className="mt-8 flex gap-x-8">
-          <div className="w-10/10 p-6">
-            <h3 className="text-2xl font-semibold">ชื่อสินค้า: {product.product_name}</h3>
-            <br />
-            <p><strong>ราคา:</strong> {product.product_price} ฿</p>
-            <br />
-            <p><strong>รายละเอียดสินค้า:</strong> {product.product_description}</p>
-            <br />
-            <p><strong>ระดับผู้สนับสนุน:</strong> {rankClass}</p>
-          </div>
 
-          <div className="w-1/10"></div>
+          <div className="w-3/10"></div>
 
-          <div className="w-3/4 p-6">
+          <div className="w-4/10 p-6">
             <h3 className="text-2xl font-semibold">Order Form</h3>
             <form className="mt-4" onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -158,7 +150,7 @@ export default function Checkout() {
                 <input name="phone" type="tel" className="w-full p-2 mt-1 border rounded-md" placeholder="Enter your phone number" required />
               </div>
               <div className="mt-8">
-                <div className="flex justify-between">
+                <div className="flex gap-10">
                   <p className="font-semibold">Total: {product.product_price} ฿</p>
                   <button type="submit" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-500">
                     Confirm Donation
@@ -167,6 +159,8 @@ export default function Checkout() {
               </div>
             </form>
           </div>
+
+          <div className="w-3/10"></div>
         </div>
       </div>
       <footer className="text-center p-4 mt-8 text-gray-500 text-sm">

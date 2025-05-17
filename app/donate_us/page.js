@@ -12,6 +12,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recha
 export default function DonateUs() {
   const [products, setProducts] = useState([]);
   const [donations, setDonations] = useState([]);
+  const API_URL = process.env.API_URL || "http://localhost:8000";
 
   useEffect(() => {
     if (!localStorage.getItem("selectedProductId")) {
@@ -20,7 +21,7 @@ export default function DonateUs() {
 
     const fetchProductNames = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/get_product_names/");
+        const response = await fetch(`${API_URL}/get_product_names/`);
         const data = await response.json();
         console.log(data)
         setProducts(data.products);
@@ -31,7 +32,7 @@ export default function DonateUs() {
 
     const fetchDonations = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/get_all_donations/");
+        const response = await fetch(`${API_URL}/get_all_donations/`);
         const data = await response.json();
         setDonations(data.donations);
       } catch (error) {
@@ -51,8 +52,7 @@ export default function DonateUs() {
 
   const donationSummary = donations.reduce((acc, curr) => {
     const date = new Date(curr.timestamp);
-    const monthKey = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}`; // เช่น "2024-05"
-  
+    const monthKey = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}`;
     const existing = acc.find(entry => entry.month === monthKey);
     if (existing) {
       existing.total += parseFloat(curr.amount);
@@ -93,7 +93,7 @@ export default function DonateUs() {
 
               <div className="text-center mt-auto">
                 <h3 className="font-semibold text-xl">{product.product_name}</h3>
-                <Link href="/donate_us/checkout">
+                <Link href="/donate_us/detail">
                   <button
                     className={`${product.color} text-white px-6 py-2 rounded-md mt-4`}
                     onClick={() => handleProductSelect(product.id)}

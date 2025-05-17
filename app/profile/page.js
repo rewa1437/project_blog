@@ -7,6 +7,13 @@ export default function Profile() {
   const [data_profile, setData] = useState('');
   const [newUsername, setNewUsername] = useState('');
   const [isSaving, setIsSaving] = useState(false);
+  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const [donations, setDonations] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentDonations = donations.slice(indexOfFirstItem, indexOfLastItem);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -20,15 +27,25 @@ export default function Profile() {
     if (userData) {
       const fetchUserData = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:8000/get_user_all/?user_id=${userData.user_id}`);
+          const response = await fetch(`${API_URL}/get_user_all/?user_id=${userData.user_id}`);
           const data = await response.json();
           setData(data);
         } catch (error) {
           console.error("Error fetching user data:", error);
         }
       };
+      const fetchDonations = async () => {
+        try {
+          const response = await fetch(`${API_URL}/get_all_donations/`);
+          const data = await response.json();
+          setDonations(data.donations);
+        } catch (error) {
+          console.error("Error fetching donations:", error);
+        }
+      };
 
       fetchUserData();
+      fetchDonations();
     }
   }, [userData]);
 
@@ -40,7 +57,7 @@ export default function Profile() {
     if (newUsername !== data_profile.username) {
       setIsSaving(true);
       try {
-        const response = await fetch(`http://127.0.0.1:8000/update_username/`, {
+        const response = await fetch(`${API_URL}/update_username/`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -72,7 +89,7 @@ export default function Profile() {
   const handleDeleteUser = async () => {
     if (window.confirm("Are you sure you want to delete your account?")) {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/delete_user/`, {
+        const response = await fetch(`${API_URL}/delete_user/`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
@@ -96,6 +113,23 @@ export default function Profile() {
       }
     }
   };  
+
+  const nextPage = () => {
+    if (currentPage < Math.ceil(donations.length / itemsPerPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const filteredData = donations.filter((item) => item.user_id === userData.user_id);
+
+  if (!filteredData.length) {
+    return <div>No donation history found.</div>;
+  }
   
   const rankClass = data_profile?.rank === 1 ? 'ผู้สนับสนุนระดับนักผจญภัย' :
                     data_profile?.rank === 2 ? 'ผู้สนับสนุนระดับจอมยุทธ' :
@@ -103,57 +137,89 @@ export default function Profile() {
                     data_profile?.rank === 4 ? 'ผู้สนับสนุนระดับตำนาน' :
                     'ผู้สนับสนุนระดับนักผจญภัย';
   return (
-    <div className="h-screen bg-gray-100 flex flex-col">
+    <div className="h-full bg-gray-100 flex flex-col">
       <Navbar />
-      <div className="flex flex-grow items-center justify-center">
-        <div className="container p-8 bg-white shadow-md rounded-lg max-w-sm w-full">
+      <div className="flex flex-col items-center justify-center space-y-4">
+        <div className="container p-8 bg-white shadow-md rounded-lg max-w-sm w-full mt-10">
           <h1 className="text-3xl font-bold text-center text-green-600 mb-4">My Account</h1>
-          
-          {data_profile ? (
-            <div>
-            <h2 className="text-xl font-semibold mb-2 text-center">Account Details</h2>
-            
-            <div className="mb-4  items-center">
-              <label htmlFor="username" className="block text-lg font-semibold mb-2 mr-4">Username:</label>
-              <input
-                type="text"
-                id="username"
-                className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
-                value={newUsername} 
-                onChange={handleUsernameChange}
-                placeholder={data_profile.username}  
-              />
+            <div className="" >
+              <h2 className="text-xl font-semibold mb-2 text-center">Account Details</h2>
+              <div className="mb-4  items-center">
+                <label htmlFor="username" className="block text-lg font-semibold mb-2 mr-4">Username:</label>
+                <input
+                  type="text"
+                  id="username"
+                  className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  value={newUsername} 
+                  onChange={handleUsernameChange}
+                  placeholder={data_profile.username}  
+                />
+              </div>
+              <p className="text-lg font-semibold mb-2">Email</p><p className="text-lg  mb-2">&emsp;{data_profile.email}</p>
+              <p className="text-lg font-semibold mb-4">Rank</p><p className="text-lg  mb-2">&emsp;{rankClass}</p>
+              <div className="mt-4 text-center flex space-x-4 items-center justify-center">
+                <button
+                  onClick={handleSaveUsername}
+                  className={`bg-gray-600 text-white px-6 py-2 rounded-md ${isSaving ? "opacity-50 cursor-not-allowed" : ""}`}
+                  disabled={isSaving}
+                >
+                  Save
+                </button>
+                <button
+                  onClick={handleDeleteUser}
+                  className={`bg-red-600 text-white px-6 py-2 rounded-md ${isSaving ? "opacity-50 cursor-not-allowed" : ""}`}
+                  disabled={isSaving}
+                >
+                  Delete
+                </button>
+              </div>
             </div>
-            
-            <p className="text-lg font-semibold mb-2">Email</p><p className="text-lg  mb-2">&emsp;{data_profile.email}</p>
-            <p className="text-lg font-semibold mb-4">Rank</p><p className="text-lg  mb-2">&emsp;{rankClass}</p>
+        </div>
 
-            <div className="mt-4 text-center flex space-x-4 items-center justify-center">
-              <button
-                onClick={handleSaveUsername}
-                className={`bg-gray-600 text-white px-6 py-2 rounded-md ${isSaving ? "opacity-50 cursor-not-allowed" : ""}`}
-                disabled={isSaving}
-              >
-                Save
-              </button>
-              <button
-                onClick={handleDeleteUser}
-                className={`bg-red-600 text-white px-6 py-2 rounded-md ${isSaving ? "opacity-50 cursor-not-allowed" : ""}`}
-                disabled={isSaving}
-              >
-                Delete
-              </button>
-            </div>
 
-          </div>
-          ) : (
-            <p className="text-center text-gray-500">Loading account details...</p>
-          )}
+
+        <div style={{ width: 600, marginTop: 20 }} className="text-center bg-white rounded-lg p-10 mb-10">
+        <h1 className="text-3xl font-bold text-center text-green-600 mb-4">Donate History</h1>
+        <table className="min-w-full border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              <th className="border border-gray-300 px-4 py-2">Timestamp</th>
+              <th className="border border-gray-300 px-4 py-2">Product Name</th>
+              <th className="border border-gray-300 px-4 py-2">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentDonations.map((item, index) => (
+              <tr key={item.id ?? index} className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">{item.timestamp}</td>
+                <td className="border border-gray-300 px-4 py-2">{item.product_name}</td>
+                <td className="border border-gray-300 px-4 py-2 text-right">{item.amount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div className="flex justify-between mt-2">
+          <button
+            onClick={prevPage}
+            disabled={currentPage === 1}
+            className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+          >
+            Prev
+          </button>
+          <span>
+            Page {currentPage} of {Math.ceil(donations.length / itemsPerPage)}
+          </span>
+          <button
+            onClick={nextPage}
+            disabled={currentPage === Math.ceil(donations.length / itemsPerPage)}
+            className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
+          >
+            Next
+          </button>
         </div>
       </div>
-      <footer className="text-center p-4 mt-8 text-gray-500 text-sm">
-        © 2025, Microfinance
-      </footer>
+      </div>
     </div>
   );
 }
