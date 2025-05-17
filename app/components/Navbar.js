@@ -7,7 +7,7 @@ export default function Navbar() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isLogin, setlogin] =  useState(false);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');

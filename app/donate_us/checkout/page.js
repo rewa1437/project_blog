@@ -8,7 +8,7 @@ export default function Checkout() {
   const [product, setProduct] = useState(null);
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
 
   useEffect(() => {
     const productId = localStorage.getItem("selectedProductId"); 

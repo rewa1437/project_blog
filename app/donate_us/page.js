@@ -12,7 +12,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recha
 export default function DonateUs() {
   const [products, setProducts] = useState([]);
   const [donations, setDonations] = useState([]);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
 
   useEffect(() => {
     if (!localStorage.getItem("selectedProductId")) {

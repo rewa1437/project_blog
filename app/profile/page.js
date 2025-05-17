@@ -7,7 +7,7 @@ export default function Profile() {
   const [data_profile, setData] = useState('');
   const [newUsername, setNewUsername] = useState('');
   const [isSaving, setIsSaving] = useState(false);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
   const [donations, setDonations] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;

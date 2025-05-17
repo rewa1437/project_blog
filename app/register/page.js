@@ -11,7 +11,7 @@ export default function Register() {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

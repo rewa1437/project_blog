@@ -9,7 +9,7 @@ export default function Checkout() {
   const [product, setProduct] = useState(null);
   const [user, setUser] = useState(null);
   const [error, setError] = useState(null);
-  const API_URL = process.env.API_URL || "http://localhost:8000";
+  const API_URL = process.env.API_URL || "https://microfinance-backend-763l.onrender.com";
 
   useEffect(() => {
     const productId = localStorage.getItem("selectedProductId"); 
@@ -36,7 +36,7 @@ export default function Checkout() {
     if (userId) {
       const fetchUserInfo = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:8000/get_user/?user_id=${userId}`);
+          const response = await fetch(`https://microfinance-backend-763l.onrender.com/get_user/?user_id=${userId}`);
           const userInfo = await response.json();
           setUser({ user_id: userId, ...userInfo });
         } catch (error) {
