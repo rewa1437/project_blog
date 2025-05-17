@@ -1,16 +1,16 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/about/page": "/about",
   "/blog/learning/invest/page": "/blog/learning/invest",
-  "/donate_us/detail/page": "/donate_us/detail",
-  "/blog/learning/manage/page": "/blog/learning/manage",
-  "/blog/page": "/blog",
   "/blog/learning/saving/page": "/blog/learning/saving",
-  "/donate_us/page": "/donate_us",
-  "/logins/page": "/logins",
+  "/blog/page": "/blog",
+  "/blog/learning/manage/page": "/blog/learning/manage",
   "/donate_us/checkout/page": "/donate_us/checkout",
-  "/register/page": "/register",
+  "/donate_us/page": "/donate_us",
+  "/donate_us/detail/page": "/donate_us/detail",
   "/page": "/",
-  "/profile/page": "/profile"
+  "/logins/page": "/logins",
+  "/profile/page": "/profile",
+  "/register/page": "/register",
+  "/about/page": "/about"
 }
