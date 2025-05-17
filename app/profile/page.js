@@ -44,7 +44,7 @@ export default function Profile() {
 
       fetchUserData();
       fetchDonations();
-    }
+    }// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userData]);
 
   const handleUsernameChange = (e) => {

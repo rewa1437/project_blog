@@ -41,7 +41,7 @@ export default function DonateUs() {
     };
 
     fetchProductNames();
-    fetchDonations();
+    fetchDonations();// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleProductSelect = (productId) => {

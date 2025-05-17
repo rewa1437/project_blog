@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 
-export default function Login() {
+export default function Login() {  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -83,7 +83,7 @@ export default function Login() {
           </div>
 
           <div className="text-sm text-center">
-            <p>Don't have an account yet? 
+            <p>Don&apos;t have an account yet? 
               <Link href="/register">
                 <span className="text-blue-500 hover:underline">Sign Up here</span>
               </Link>

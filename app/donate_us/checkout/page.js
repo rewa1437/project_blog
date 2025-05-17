@@ -25,7 +25,7 @@ export default function Checkout() {
         }
       };
       fetchProductData();
-    }
+    }// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function Checkout() {
         }
       };
       fetchUserInfo();
-    }
+    }// eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = async (e) => {
