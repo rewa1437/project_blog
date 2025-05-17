@@ -309,12 +309,12 @@ function Checkout() {
             }, void 0, false, {
                 fileName: "[project]/app/donate_us/detail/page.js",
                 lineNumber: 54,
-                columnNumber: 9
+                columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/donate_us/detail/page.js",
             lineNumber: 53,
-            columnNumber: 7
+            columnNumber: 9
         }, this);
     }
     if (!product || !user) {
@@ -325,12 +325,12 @@ function Checkout() {
             }, void 0, false, {
                 fileName: "[project]/app/donate_us/detail/page.js",
                 lineNumber: 62,
-                columnNumber: 9
+                columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/donate_us/detail/page.js",
             lineNumber: 61,
-            columnNumber: 7
+            columnNumber: 9
         }, this);
     }
     const rankClass = product.product_rank === 1 ? 'ผู้สนับสนุนระดับนักผจญภัย ได้รับพื้นหลังโปรไฟล์เป็นสีเทา' : product.product_rank === 2 ? 'ผู้สนับสนุนระดับจอมยุทธ ได้รับพื้นหลังโปรไฟล์เป็นสีฟ้า' : product.product_rank === 3 ? 'ผู้สนับสนุนระดับวีรบุรุษ ได้รับพื้นหลังโปรไฟล์เป็นสีเขียว' : product.product_rank === 4 ? 'ผู้สนับสนุนระดับตำนาน ได้รับพื้นหลังโปรไฟล์เป็นสีเหลือง' : 'ผู้สนับสนุนระดับนักผจญภัย ได้รับพื้นหลังโปรไฟล์เป็นสีเทา';
@@ -340,7 +340,7 @@ function Checkout() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/donate_us/detail/page.js",
                 lineNumber: 75,
-                columnNumber: 7
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "p-8 items-center justify-center text-center",
@@ -351,7 +351,7 @@ function Checkout() {
                     }, void 0, false, {
                         fileName: "[project]/app/donate_us/detail/page.js",
                         lineNumber: 77,
-                        columnNumber: 13
+                        columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-8 flex gap-x-8 items-center justify-center text-center",
@@ -361,7 +361,7 @@ function Checkout() {
                             }, void 0, false, {
                                 fileName: "[project]/app/donate_us/detail/page.js",
                                 lineNumber: 80,
-                                columnNumber: 17
+                                columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-4/10 p-6",
@@ -375,12 +375,12 @@ function Checkout() {
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 82,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 83,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
@@ -389,7 +389,7 @@ function Checkout() {
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/detail/page.js",
                                                 lineNumber: 84,
-                                                columnNumber: 24
+                                                columnNumber: 26
                                             }, this),
                                             " ",
                                             product.product_price,
@@ -398,12 +398,12 @@ function Checkout() {
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 84,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 85,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
@@ -412,7 +412,7 @@ function Checkout() {
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/detail/page.js",
                                                 lineNumber: 86,
-                                                columnNumber: 24
+                                                columnNumber: 26
                                             }, this),
                                             " ",
                                             product.product_description
@@ -420,12 +420,12 @@ function Checkout() {
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 86,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 87,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
@@ -434,7 +434,7 @@ function Checkout() {
                                             }, void 0, false, {
                                                 fileName: "[project]/app/donate_us/detail/page.js",
                                                 lineNumber: 88,
-                                                columnNumber: 24
+                                                columnNumber: 26
                                             }, this),
                                             " ",
                                             rankClass
@@ -442,26 +442,26 @@ function Checkout() {
                                     }, void 0, true, {
                                         fileName: "[project]/app/donate_us/detail/page.js",
                                         lineNumber: 88,
-                                        columnNumber: 21
+                                        columnNumber: 23
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/donate_us/detail/page.js",
                                 lineNumber: 81,
-                                columnNumber: 17
+                                columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-3/10"
                             }, void 0, false, {
                                 fileName: "[project]/app/donate_us/detail/page.js",
                                 lineNumber: 91,
-                                columnNumber: 17
+                                columnNumber: 19
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/donate_us/detail/page.js",
                         lineNumber: 79,
-                        columnNumber: 13
+                        columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "../donate_us/checkout",
@@ -472,18 +472,18 @@ function Checkout() {
                         }, void 0, false, {
                             fileName: "[project]/app/donate_us/detail/page.js",
                             lineNumber: 94,
-                            columnNumber: 21
+                            columnNumber: 23
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/donate_us/detail/page.js",
                         lineNumber: 93,
-                        columnNumber: 13
+                        columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/donate_us/detail/page.js",
                 lineNumber: 76,
-                columnNumber: 9
+                columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                 className: "text-center p-4 mt-8 text-gray-500 text-sm",
@@ -491,13 +491,13 @@ function Checkout() {
             }, void 0, false, {
                 fileName: "[project]/app/donate_us/detail/page.js",
                 lineNumber: 99,
-                columnNumber: 7
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/donate_us/detail/page.js",
         lineNumber: 74,
-        columnNumber: 5
+        columnNumber: 7
     }, this);
 }
 _s(Checkout, "v+F1kfaQ+hLw5wTVhFbmTqNzsIk=");

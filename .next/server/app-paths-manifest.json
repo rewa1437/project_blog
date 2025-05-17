@@ -1,7 +1,10 @@
 {
+  "/about/page": "app/about/page.js",
+  "/blog/page": "app/blog/page.js",
   "/donate_us/checkout/page": "app/donate_us/checkout/page.js",
   "/donate_us/detail/page": "app/donate_us/detail/page.js",
   "/donate_us/page": "app/donate_us/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/logins/page": "app/logins/page.js",
   "/page": "app/page.js",
   "/profile/page": "app/profile/page.js",
