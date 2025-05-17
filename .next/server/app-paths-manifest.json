@@ -1,5 +1,9 @@
 {
+  "/donate_us/checkout/page": "app/donate_us/checkout/page.js",
   "/donate_us/detail/page": "app/donate_us/detail/page.js",
   "/donate_us/page": "app/donate_us/page.js",
-  "/page": "app/page.js"
+  "/logins/page": "app/logins/page.js",
+  "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/register/page": "app/register/page.js"
 }
